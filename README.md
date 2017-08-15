@@ -55,10 +55,10 @@ Automating development:
 
 Some tools help us write beautiful code, while others help implement the
 programs we write in a more functional perspective. Task runners help developers
- perform a variety of actions such as concatenating/minifying files, prefixing
+perform a variety of actions such as concatenating/minifying files, and prefixing
 files for different browsers. These tasks are possible to perform by writing
-bash bash/shell scripts or npm package/commands. However, this would be time
-consuming and tedious.
+bash bash/shell scripts or npm package/commands. However, this could be quite time
+consuming.
 
 Let's take a look at grunt.
 
@@ -70,7 +70,7 @@ How does grunt work?
   - installed and managed via npm
   - configured with Gruntfile (configure & create custom tasks, load plugins)
 
-grunt commands:
+Grunt commands:
 - grunt lint: checks your JavaScript against JSHint
 - grunt qunit: runs your Qunit tests
 - grunt concat: concatenates your project files together and puts the new file
@@ -79,11 +79,11 @@ grunt commands:
 
 ## Work Smarter Not Harder
 
-Demo task automation with Ruby and Tinder.
+Demo task automation with Ruby.
 
 https://github.com/tarraschk/TinderAutoLike/blob/master/TinderAutoLike.rb
 
-Failed experiments: 
+Failed trials: 
   - virtual box, android running as virtual machine, auto clicker
   - python script, charles proxy, fb auth token and id.
 
