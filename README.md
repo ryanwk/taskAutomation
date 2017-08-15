@@ -1,106 +1,95 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+# Task Automation
 
-# Talk Template
+Task automation involves utilizing tools that are designed to automate
+repetive day to day actions in order to streamline or augment a workflow.
+Manually performing meticulous actions is generally not the most productive way
+to approach a situation. If there are tools available that can make your life
+easier why not use them?
 
-Use this template to structure your READMEs for talks. Remove text from this
-section, or use it to frame the talk you are giving. Good framing answers the
-question "Why am I learning this?".
-
-Be sure to include a recent [`LICENSE`](LICENSE) and Markdown linter
-configuration ([`.remarkrc`](.remarkrc)). Also, include an appropriate
-`.gitignore`; these are usually found in specific technology templates, for
-example [js-template](https://www.github.com/ga-wdi-boston/js-template).
+We use a lot of task automating and task running tools while developing. I was
+curious as to what some of these tools were and decided to research a bit about
+them.
 
 ## Prerequisites
 
--   Topics with which developers should be familiar with.
--   Prerequisites are "just-in-time", so if I have a prerequisite that mentions
-    Sass, I would **not** need to include CSS as a prerequisite.
--   [Links to previous materials](https://www.github.com/ga-wdi-boston/example)
-    are often useful.
+-   An open mind
 
 ## Objectives
 
 By the end of this, developers should be able to:
 
--   Write objectives that focus on demonstrating knowledge.
--   Write learning objectives that begin with an [imperative
-    verb](https://en.wikipedia.org/wiki/Imperative_mood).
--   Avoid objectives that start with "Use" or "Understand".
--   Rewrite objecives that begin with "Use" by inverting sentence structure.
--   End each objective with a period.
--   Write objectives on the whiteboard so they can be referenced during a talk.
+-   Recieve an overview of task automation & task running.
+-   Overview examples of task automation & task running tools that we use daily.
+-   View the implementation of a task automation tool.
+
 
 ## Preparation
 
-1.  Fork and clone this repository.
+1.  Fork and clone this repository if you would like a copy of these notes.
  [FAQ](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
-1.  Create a new branch, `training`, for your work.
-1.  Checkout to the `training` branch.
-1.  Install dependencies with `npm install`.
 
-Better preparation instructions may be found as
-[snippets](https://github.com/ga-wdi-boston/instructors/tree/master/snippets).
+## Automation
 
-It's a good idea to have students do these steps while you're writing objectives
-on the whiteboard.
+Broad examples of automation in day to day life.
+ - Using hotkeys.
+ - Macros (logs your keystrokes, mouse movements, clicks, saves them to a file
+ for later use)
+ - Send timed e-mails to subscribers of a businesses email list
+ (ActiveCampaign, Salesforce)
+ - Amazon warehouse robots: https://www.youtube.com/watch?v=cLVCGEmkJs0
 
-## Leading Topic Heading
+## Task automation and Development
 
-Here is where the talk begins. If you have not already included framing above,
-it's appropriate to put it here. Link to introductory articles or documentation.
-Motivate the next section.
+We often use linters and other beautifing tools while coding, these are designed
+to help us focus on writing nice and readable code. This is important when
+writing code that other developers will use.
 
-Demos, exercises, and labs are labelled as such, followed by a colon and a
-description of the activity starting with an [imperative
-verb](https://en.wikipedia.org/wiki/Imperative_mood).
+Automating development:
+- Atom (packages, linter-csslint, linter-eslint, linter-rubocop)
+- Visual Studio (places the terminal in your IDE)
+- Task runners (rake, grunt, gulp)
+- Bundler (webpack - bundles our modules for use in a browser environment)
 
-## Demo: Write a Demo
 
-Demos are demonstrations, and developers should give their full attention to
-them. It's a great time for them to take notes about important concepts before
-applying them in an exercise.
+## A Note on Task Runners
 
-Demos correspond to the "I do" portion of scaffolding from consultant training.
+Some tools help us write beautiful code, while others help implement the
+programs we write in a more functional perspective. Task runners help developers
+ perform a variety of actions such as concatenating/minifying files, prefixing
+files for different browsers. These tasks are possible to perform by writing
+bash bash/shell scripts or npm package/commands. However, this would be time
+consuming and tedious.
 
-## Code-Along: Write an Code-Along
+Let's take a look at grunt.
 
-During the code-along, developers should apply concepts covered in the previous
-demo, led by the consultant.
-This is their first chance to generalize concepts introduced. Exercises should
-be very focused, and flow natural into a lab.
+What does grunt do?
+  - automates tasks such as minification (uglify), compilation, unit testing
+  - allows us to use plugins such as handlebars, SASS, etc.
 
-Exercises correspond to the "We do" portion of scaffolding from consultant
-training.
+How does grunt work?
+  - installed and managed via npm
+  - configured with Gruntfile (configure & create custom tasks, load plugins)
 
-## Lab: Write a Lab
+grunt commands:
+- grunt lint: checks your JavaScript against JSHint
+- grunt qunit: runs your Qunit tests
+- grunt concat: concatenates your project files together and puts the new file
+- grunt min: minifies the file concat put out.
 
-During labs, developers get to demonstrate their understanding of concepts from
-demos and applied knowledge from exercises. Labs are an opportunity for
-developers to build confidence, and also serve as a diagnostic tool for
-consultants to evaluate developer understanding.
 
-Labs should be timed explicitly using a timer. When estimating the time it will
-take to complete a lab, it is better to overestimate. During labs, consultants
-should circle the room and interact with developers, noting patterns and
-prompting with hints on how to complete the lab. If developers end early, a
-consultant may stop the lab timer. If developers do not finish in time, a
-consultant may give more time at her discretion based on current talk pace, the
-current estimate for the talk, and the importance of completing the lab while
-consultant support is available.
+## Work Smarter Not Harder (demo)
 
-Labs correspond to the "You do" portion of scaffolding from consultant
-training.
+Demo task automation with Ruby and Tinder.
+
+https://github.com/tarraschk/TinderAutoLike
+
 
 ## Additional Resources
 
--   Any useful links should be included in the talk material where the link is
-    first referenced.
--   Additional links for further study or exploration are appropriate in this
-    section.
--   Links to important parts of documentation not covered during the talk, or
-    tools tangentially used but not part of the focus of the talk, are also
-    appropriate.
+-   https://www.charlesproxy.com/documentation/getting-started/
+-   https://medium.com/@malimirkeccita/how-to-automate-development-with-atom-4b27b1391e3f
+-   https://www.visualstudio.com
+
 
 ## [License](LICENSE)
 
