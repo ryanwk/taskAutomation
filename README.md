@@ -77,16 +77,21 @@ grunt commands:
 - grunt min: minifies the file concat put out.
 
 
-## Work Smarter Not Harder (demo)
+## Work Smarter Not Harder
 
 Demo task automation with Ruby and Tinder.
 
-https://github.com/tarraschk/TinderAutoLike
+https://github.com/tarraschk/TinderAutoLike/blob/master/TinderAutoLike.rb
+
+Failed experiments: 
+  - virtual box, android running as virtual machine, auto clicker
+  - python script, charles proxy, fb auth token and id.
 
 
 ## Additional Resources
 
 -   https://www.charlesproxy.com/documentation/getting-started/
+-   https://github.com/jaungiers/Tinder-py_auto_liker/blob/master/tinder-py_auto_liker.py
 -   https://medium.com/@malimirkeccita/how-to-automate-development-with-atom-4b27b1391e3f
 -   https://www.visualstudio.com
 
