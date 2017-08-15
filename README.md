@@ -79,7 +79,8 @@ Grunt commands:
 
 ## Work Smarter Not Harder
 
-Demo task automation with Ruby.
+Demo task automation with Ruby. 
+Disclaimer: I did this for science.
 
 https://github.com/tarraschk/TinderAutoLike/blob/master/TinderAutoLike.rb
 
